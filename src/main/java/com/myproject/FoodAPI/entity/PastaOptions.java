@@ -3,8 +3,8 @@ package com.myproject.FoodAPI.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "pizza_options")
-public class PizzaOptions {
+@Table(name = "pasta_options")
+public class PastaOptions {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,9 +14,8 @@ public class PizzaOptions {
     @Column(name = "img_url")
     private String imgUrl;
 
-
-    @Column(name = "pizza_name")
-    private String pizzaName;
+    @Column(name = "pasta_name")
+    private String pastaName;
 
     @Column(name = "price")
     private float price;
@@ -24,13 +23,13 @@ public class PizzaOptions {
     @Column(name = "rating")
     private float rating;
 
-    public PizzaOptions() {
+    public PastaOptions() {
 
     }
 
-    public PizzaOptions(String imgUrl, String pizzaName, float price, float rating) {
+    public PastaOptions(String imgUrl, String pastaName, float price, float rating) {
         this.imgUrl = imgUrl;
-        this.pizzaName = pizzaName;
+        this.pastaName = pastaName;
         this.price = price;
         this.rating = rating;
     }
@@ -51,12 +50,12 @@ public class PizzaOptions {
         this.imgUrl = imgUrl;
     }
 
-    public String getPizzaName() {
-        return pizzaName;
+    public String getPastaName() {
+        return pastaName;
     }
 
-    public void setPizzaName(String pizzaName) {
-        this.pizzaName = pizzaName;
+    public void setPastaName(String pastaName) {
+        this.pastaName = pastaName;
     }
 
     public float getPrice() {
@@ -77,10 +76,10 @@ public class PizzaOptions {
 
     @Override
     public String toString() {
-        return "PizzaOptions{" +
+        return "PastaOptions{" +
                 "id=" + id +
                 ", imgUrl='" + imgUrl + '\'' +
-                ", pizzaName='" + pizzaName + '\'' +
+                ", pastaName='" + pastaName + '\'' +
                 ", price=" + price +
                 ", rating=" + rating +
                 '}';
