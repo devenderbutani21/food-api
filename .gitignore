@@ -4,6 +4,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 *.sql
+SQL Scripts
 
 ### STS ###
 .apt_generated
